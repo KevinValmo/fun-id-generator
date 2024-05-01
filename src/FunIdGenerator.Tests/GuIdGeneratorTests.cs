@@ -8,7 +8,7 @@ public class GuIdGeneratorTests
     [SetUp]
     public void SetUp()
     {
-        _generator = GuIdGeneratorExtensions.UseGuIdGenereator();
+        _generator = GuIdGenerator.Build();
     }
 
     [Test]
@@ -31,7 +31,7 @@ public class GuIdGeneratorTests
         Guid expectedInitialIdentifier = Guid.Empty;
 
         // Act
-        GuIdGenerator generator = GuIdGeneratorExtensions.UseGuIdGenereator();
+        GuIdGenerator generator = GuIdGenerator.Build();
 
         // Assert
         Assert.That(generator.Current, Is.EqualTo(expectedInitialIdentifier));

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunIdGenerator", "FunIdGene
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunIdGenerator.Tests", "FunIdGenerator.Tests\FunIdGenerator.Tests.csproj", "{C48C2D9C-A0B0-4DD7-8ABD-2A2AAB8F6716}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunIdGenerator.App", "FunIdGenerator.App\FunIdGenerator.App.csproj", "{0438352E-8235-436C-8C9F-0EE216F7C039}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C48C2D9C-A0B0-4DD7-8ABD-2A2AAB8F6716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C48C2D9C-A0B0-4DD7-8ABD-2A2AAB8F6716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C48C2D9C-A0B0-4DD7-8ABD-2A2AAB8F6716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0438352E-8235-436C-8C9F-0EE216F7C039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0438352E-8235-436C-8C9F-0EE216F7C039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0438352E-8235-436C-8C9F-0EE216F7C039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0438352E-8235-436C-8C9F-0EE216F7C039}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

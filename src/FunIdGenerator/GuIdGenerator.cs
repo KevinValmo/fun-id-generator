@@ -3,6 +3,8 @@
 public sealed class GuIdGenerator(GuIdBuilder builder, Guid firstIdentifier)
     : IdGenerator<Guid>(builder, firstIdentifier)
 {
+    public static GuIdGenerator Build() => new(Guid.NewGuid, Guid.Empty);
+
     public override void Dispose() { }
 
     public override ValueTask DisposeAsync() => ValueTask.CompletedTask;
@@ -15,8 +17,3 @@ public sealed class GuIdGenerator(GuIdBuilder builder, Guid firstIdentifier)
 }
 
 public delegate Guid GuIdBuilder();
-
-public static class GuIdGeneratorExtensions
-{
-    public static GuIdGenerator UseGuIdGenereator() => new(Guid.NewGuid, Guid.Empty);
-}

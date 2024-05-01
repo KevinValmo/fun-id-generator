@@ -8,7 +8,7 @@ public class IntIdGeneratorTests
     [SetUp]
     public void SetUp()
     {
-        _generator = IntIdGeneratorExtensions.Build();
+        _generator = IntIdGenerator.Build();
     }
 
     [Test]
@@ -31,7 +31,7 @@ public class IntIdGeneratorTests
         int expectedInitialIdentifier = -1;
 
         // Act
-        IntIdGenerator generator = IntIdGeneratorExtensions.Build();
+        IntIdGenerator generator = IntIdGenerator.Build();
 
         // Assert
         Assert.That(generator.Current, Is.EqualTo(expectedInitialIdentifier));
